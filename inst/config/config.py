@@ -37,9 +37,9 @@ config = {
   "Version"          : str(sys.version).replace("\n", " "),
   "VersionNumber"    : str(sys.version_info[0]) + "." + str(sys.version_info[1]),
   "Prefix"           : getattr(sys, "prefix", ""),
-  "PrefixLib"        : getattr(sys, "prefix", "") + "/lib",
   "ExecPrefix"       : getattr(sys, "exec_prefix", ""),
   "BaseExecPrefix"   : getattr(sys, "base_exec_prefix", ""),
+  "BaseExecPrefixLib": getattr(sys, "base_exec_prefix", "") + "/lib",
   "PythonPath"       : pathsep.join(sys.path[1:]),
   "LIBPL"            : sysconfig.get_config_var("LIBPL"),
   "LIBDIR"           : sysconfig.get_config_var("LIBDIR")
