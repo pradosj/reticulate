@@ -37,6 +37,7 @@ config = {
   "Version"          : str(sys.version).replace("\n", " "),
   "VersionNumber"    : str(sys.version_info[0]) + "." + str(sys.version_info[1]),
   "Prefix"           : getattr(sys, "prefix", ""),
+  "PrefixLib"        : getattr(sys, "prefix", "") + "/lib",
   "ExecPrefix"       : getattr(sys, "exec_prefix", ""),
   "BaseExecPrefix"   : getattr(sys, "base_exec_prefix", ""),
   "PythonPath"       : pathsep.join(sys.path[1:]),
